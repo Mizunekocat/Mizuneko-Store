@@ -1,0 +1,644 @@
+<!--Página web diseñada por: Laura Isabella Moreno Herrera
+    Curso: Programación Web
+    Grupo: 213025_18
+    Programa: Ingeniería Multimedia
+    UNAD
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizuneko Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <a href="#" img class="gato-soporte"> <img src="Img/Gato soporte al cliente.png"
+                            alt="gato soporte"></a>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <a href="index.html" class="imagen-logo"> <img src="Img/Mizuneko logo.png" alt="Imagen logo"></a>
+                    <h1 class="logo"><a href="index.html">MIZUNEKO STORE</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <a href="#" img class="fa-solid fa-user"> <img src="Img/User.png" alt="Usuario"></a>
+                    <a href="#" img class="fa-solid fa-favoritos"> <img src="Img/Favoritos.png" alt="Favoritos"></a>
+                    <a href="#" img class="fa-solid fa-basket-shopping"> <img src="Img/Carro de compras.png"
+                            alt="Carro de compras"></a>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--MENU-->
+        <div class="container-navbar">
+
+            <div class="logo-menu">Mizuneko Store</div>
+
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="Img/Menu gato.png" alt="btn-menu"></label>
+            <nav class="navbar container">
+
+
+                <ul class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./Nosotros.html">Nosotros</a></li>
+
+                    <li class="submenu">
+                        <a href="./Productos.html">Productos</a>
+                        <ul class="hijos">
+                            <li><a href="./Mujer.html">Mujer</a></li>
+                            <li><a href="./Hombre.html">Hombre</a></li>
+                            <li><a href="./Unisex.html">Unisex</a></li>
+                            <li><a href="./Utiles y accesorios.html">Útiles y accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Familia.html">Familia Mizuneko</a></li>
+
+                    <li class="submenu">
+                        <a href="./Blog.html">Blog</a>
+                        <ul class="hijos">
+                            <li><a href="./Publicaciones.html">Publicaciones</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./Contacto.html">Contacto</a></li>
+                </ul>
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <a href="#" img class="lupa"> <img src="Img/Busqueda.png" alt="Buscar lupa"></a>
+                    </button>
+                </form>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="banner" id="banner">
+
+        <div class="content">
+            <h2>Ropa de calidad</h2>
+            <span>100% Colombiana</span>
+            <p>Diseños únicos</p>
+            <a href="./Productos.html" class="btn">COMPRAR AHORA</a>
+        </div>
+
+    </section>
+
+
+
+
+    <main class="main-content">
+
+        <!--CARRUCEL-->
+        <div class="carrucel">
+            <div class="slider-productos" id="slider-productos">
+
+                <ul class="slider">
+                    <li id="slide1">
+                        <video src="Vid/Mizuneko Store New.MP4" loop autoplay muted></video>
+                    </li>
+
+                    <li id="slide2">
+                        <h2>Nueva colección</h2>
+                        <img src="./Img/Fondo Catalogo 1.PNG">
+                    </li>
+
+                    <li id="slide3">
+                        <h2>Diseños únicos y personalizados</h2>
+                        <img src="./Img/Fondo Catalogo 2.PNG">
+                    </li>
+
+                    <li id="slide4">
+                        <h2>Actualizamos nuestra tienda cada semana</h2>
+                        <img src="./Img/Mizuneko final.png">
+                    </li>
+                </ul>
+
+                <ul class="menu-slider">
+                    <li>
+                        <a href="#slide1">1</a>
+                    </li>
+                    <li>
+                        <a href="#slide2">2</a>
+                    </li>
+                    <li>
+                        <a href="#slide3">3</a>
+                    </li>
+                    <li>
+                        <a href="#slide4">4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--PRODUCTOS-ROPA-->
+        <section class="container top-products">
+            <h1 class="heading">Diseños únicos</h1>
+
+            <div class="container-options">
+                <a href="./Mujer.html"><span>Mujer</span></a>
+                <a href="./Hombre.html"><span>Hombre</span></a>
+                <a href="./Unisex.html"><span>Unisex</span></a>
+                <a href="./Utiles y accesorios.html"><span>Útiles y accesorios</span></a>
+                <a href="./Productos.html"><span>Todos los productos</span></a>
+            </div>
+
+            <!--MEJORES PRODUCTOS-->
+            <section class="container-products">
+                <!-- Producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./Productos/Camiseta Poikit 1.png" alt="Camiseta">
+                        <span class="discount">-10%</span>
+
+                        <div class="button-group">
+                            <span>
+                                <img src="./Img/Eye.png" alt="Ojo">
+                            </span>
+                            <span>
+                                <img src="./Img/Heart.png" alt="Corazon">
+                            </span>
+                            <span>
+                                <img src="./Img/Comparar.png" alt="Comparar">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                        </div>
+
+                        <h3>Camiseta</h3>
+                        <div class="add-cart">
+                            <span>Añadir al carrito</span>
+                        </div>
+                        <p class="price">$40.000 <span>$50.000</span></p>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./Productos/Pantaloneta Poikit 2.png" alt="Pantaloneta">
+                        <span class="discount">-20%</span>
+
+                        <div class="button-group">
+                            <span>
+                                <img src="./Img/Eye.png" alt="Ojo">
+                            </span>
+                            <span>
+                                <img src="./Img/Heart.png" alt="Corazon">
+                            </span>
+                            <span>
+                                <img src="./Img/Comparar.png" alt="Comparar">
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/star.png" alt="Estrella">
+                        </div>
+
+                        <h3>Pantaloneta</h3>
+                        <div class="add-cart">
+                            <span>Añadir al carrito</span>
+                        </div>
+                        <p class="price">$40.000 <span>$50.000</span></p>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./Productos/Tennis Poikit.png" alt="Tennis">
+                        <span class="discount">-10%</span>
+
+                        <div class="button-group">
+                            <span>
+                                <img src="./Img/Eye.png" alt="Ojo">
+                            </span>
+                            <span>
+                                <img src="./Img/Heart.png" alt="Corazon">
+                            </span>
+                            <span>
+                                <img src="./Img/Comparar.png" alt="Comparar">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                        </div>
+
+                        <h3>Tennis</h3>
+                        <div class="add-cart">
+                            <span>Añadir al carrito</span>
+                        </div>
+                        <p class="price">$60.000 <span>$70.000</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./Productos/Bolsa poikit 1.png" alt="Bolsa">
+                        <span class="discount">-25%</span>
+
+                        <div class="button-group">
+                            <span>
+                                <img src="./Img/Eye.png" alt="Ojo">
+                            </span>
+                            <span>
+                                <img src="./Img/Heart.png" alt="Corazon">
+                            </span>
+                            <span>
+                                <img src="./Img/Comparar.png" alt="Comparar">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/star.png" alt="Estrella">
+                        </div>
+
+                        <h3>Bolsa</h3>
+                        <div class="add-cart">
+                            <span>Añadir al carrito</span>
+                        </div>
+                        <p class="price">$15.000 <span>$20.000</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./Productos/Bolsa poikit 2.png" alt="Bolsa">
+                        <span class="discount">-25%</span>
+
+                        <div class="button-group">
+                            <span>
+                                <img src="./Img/Eye.png" alt="Ojo">
+                            </span>
+                            <span>
+                                <img src="./Img/Heart.png" alt="Corazon">
+                            </span>
+                            <span>
+                                <img src="./Img/Comparar.png" alt="Comparar">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/star.png" alt="Estrella">
+                        </div>
+
+                        <h3>Bolsa</h3>
+                        <div class="add-cart">
+                            <span>Añadir al carrito</span>
+                        </div>
+                        <p class="price">$15.000 <span>$20.000</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./Productos/Bolsa poikit 3.png" alt="Bolsa">
+                        <span class="discount">-25%</span>
+
+                        <div class="button-group">
+                            <span>
+                                <img src="./Img/Eye.png" alt="Ojo">
+                            </span>
+                            <span>
+                                <img src="./Img/Heart.png" alt="Corazon">
+                            </span>
+                            <span>
+                                <img src="./Img/Comparar.png" alt="Comparar">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/star.png" alt="Estrella">
+                        </div>
+
+                        <h3>Camiseta</h3>
+                        <div class="add-cart">
+                            <span>Añadir al carrito</span>
+                        </div>
+                        <p class="price">$40.000 <span>$50.000</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!--BOLETÍN INFORMATIVO - SUSCRIPCCIÓN-->
+            <div class="newsletter">
+                <p class="title-footer">Boletín informativo</p>
+
+                <div class="content">
+                    <a href="#" class="gato-suscriptor"> <img src="Img/Gato suscriptor.png" alt="Gato suscriptor"></a>
+                    <p>
+                        Suscríbete a nuestros boletines ahora y mantente al
+                        día con nuevas colecciones y ofertas exclusivas.
+                    </p>
+                    
+                    <input type="email" placeholder="Ingresa el correo aquí...">
+
+
+
+                    <button>Suscríbete</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--REVIEWS DE CLIENTES-->
+
+        <section class="review" id="review">
+
+            <h1 class="heading"> <span> Opiniones/Reviews</span> de clientes</h1>
+
+            <p>Estas opiniones reflejan la satisfacción de los clientes que han comprado en la tienda de ropa en línea
+                con
+                temática de gatos y han otorgado calificaciones de 5 estrellas debido a la calidad de los productos, la
+                rapidez
+                en la entrega y el servicio al cliente excepcional.
+            </p>
+            <div class="box-container">
+                <div class="box-content">
+                    <div class="box">
+                        <div class="estrellas">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                        </div>
+                    </div>
+                    <p>"Este lugar es un auténtico paraíso para aficionados a los gatos como yo. Compré un suéter con un
+                        diseño
+                        felino de calidad excepcional, el envío fue rápido y tuve un servicio al cliente amable.
+                        Definitivamente,
+                        volveré a comprar aquí."
+                    </p>
+                    <div class="user">
+                        <img src="./Img/Anthony J. C.png" alt="A. Crowley. C">
+                        <div class="user-info">
+                            <h3>Anthony C</h3>
+                            <span>Cliente feliz y satisfecho</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <div class="box">
+                        <div class="estrellas">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                        </div>
+                    </div>
+                    <p>"Los productos de esta tienda son simplemente adorables. Compré una bufanda con patrones de gatos
+                        para mi
+                        amigo y le encantó. La ropa es suave, cómoda y se ajusta perfectamente. Además, el precio es muy
+                        razonable.
+                        ¡Cinco
+                        estrellas merecidas!"</p>
+                    <div class="user">
+                        <img src="./Img/Azira C.png" alt="Azira C">
+                        <div class="user-info">
+                            <h3>Azira C</h3>
+                            <span>Cliente feliz y satisfecho</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <div class="box">
+                        <div class="estrellas">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                        </div>
+                    </div>
+                    <p>"Esta tienda es un hallazgo para los amantes de los gatos. Compré una Camiseta con gatitos
+                        impresos y
+                        es el
+                        accesorio perfecto para cualquier atuendo. La entrega fue rápida y el artículo estaba bien
+                        empacado.
+                        Estoy
+                        impresionado y feliz con mi compra."</p>
+                    <div class="user">
+                        <img src="./Img/Chayanne C.png" alt="Chayanne C">
+                        <div class="user-info">
+                            <h3>Elmer C</h3>
+                            <span>Cliente feliz y satisfecho</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <div class="box">
+                        <div class="estrellas">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                            <img src="./Img/estrella.png" alt="Estrella">
+                        </div>
+                    </div>
+                    <p>"He comprado varias veces en esta tienda y nunca me han decepcionado. La variedad de ropa con
+                        temática de
+                        gatos es asombrosa. Compré un par de calcetines esta vez y son tan cómodos y lindos. ¡La
+                        atención al
+                        detalle
+                        es increíble! Cinco estrellas sin duda."</p>
+                    <div class="user">
+                        <img src="./Img/Missa C.png" alt="Missa C">
+                        <div class="user-info">
+                            <h3>Missa C</h3>
+                            <span>Cliente feliz y satisfecho</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--INFORMACIÓN-ICONOS-->
+        <section class="icons-container container-features">
+
+            <img class="gato-delivery" img src="./Img/Gato delivery.png" alt="Delivery">
+
+            <div class="card-icons">
+                <img src="./Img/Seguro.png" alt="Seguro">
+                <div class="feature-content">
+                    <h3>Pagos seguros</h3>
+                    <span>En efectivo o con cualquier tarjeta</span>
+                </div>
+            </div>
+
+            <div class="card-icons">
+                <img src="./Img/Envio gratis.png" alt="envio gratis">
+                <div class="feature-content">
+                    <h3>Envío gratuito a nivel Internacional</h3>
+                    <span>En pedido superior a $90.000</span>
+                </div>
+            </div>
+
+            <div class="card-icons">
+                <img src="./Img/Reembolso.png" alt="reembolso">
+                <div class="feature-content">
+                    <h3>Contrareembolso</h3>
+                    <span>100% garantía de devolución de dinero</span>
+                </div>
+            </div>
+
+            <div class="card-icons">
+                <img src="./Img/Gato soporte al cliente.png" alt="gato soporte">
+                <div class="feature-content">
+                    <h3>Servicio al cliente 24/7</h3>
+                    <span>Atención todo el día, llámenos al 123-456-7890</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="container top-products formas-de-pago">
+            <h1 class="heading">Formas de pago</h1>
+
+            <img src="img/Formas de pago.png" alt="Pagos">
+        </section>
+    </main>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>
+                            Dirección: Km1, Vía Villavicencio - Acacías, Acacías, Meta
+                        </li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Fax: 12345678910</li>
+                        <li>EmaiL: mizunekostore@support.com</li>
+                    </ul>
+
+                    <!--REDES SOCIALES-->
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <a href="https://www.facebook.com/"><img src="./Img/Facebook.png"></a>
+                        </span>
+                        <span class="twitter">
+                            <a href="https://twitter.com/home"><img src="./Img/Twitter.png"></a>
+                        </span>
+                        <span class="pinterest">
+                            <a href="https://co.pinterest.com/"><img src="./Img/Pinterest.png"></a>
+                        </span>
+                        <span class="youtube">
+                            <a href="https://www.youtube.com/"><img src="./Img/Youtube.png"></a>
+                        </span>
+                        <span class="instagram">
+                            <a href="https://www.instagram.com/"><img src="./Img/instagram.png"></a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información Delivery</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contactános</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    <a href="#"><img src="./Img/Mi avatar Isabella.png"></a>
+                    Diseñado por: Laura Isabella Moreno Herrera &copy; 2023
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+</body>
